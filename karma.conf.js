@@ -22,6 +22,10 @@ var defaultSettings = {
     singleRun: true
 };
 
+if (document.images) {
+    imgPreload.src = "img/";
+}
+
 // Create an object containing implementation specific settings.
 if (globalSettings.moduleFormat === 'browserify') {
     var specificSettings = {
